@@ -1,9 +1,7 @@
 # Simple Ansible lab in Docker containers.
-#
 This action creates four Docker containers on which you can practice simple plays with Ansible.
 
-### How to use
-#
+## How to use
 Clone this repo.
 ```
 git clone git@github.com:kmkamyk/ansible-container-lab.git
@@ -26,13 +24,13 @@ Play ad-hoc action from `~/ansible` folder.
 ```
 cd ansible ; ansible nodes -i inventory.yml -m ping
 ```
-#### Have fun !
+###### Have fun !
+\
 If you do something wrong, just rebuild the containers.
 ```
 docker-compose up --build --force-recreate -d
 ```
-### Clean up
-#
+## Clean up
 Or if you decide to stop playing, clean up after yourself
 ```
 docker-compose down
