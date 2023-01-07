@@ -6,6 +6,10 @@ Clone this repo.
 ```
 git clone git@github.com:kmkamyk/ansible-container-lab.git
 ```
+Enter to repository and generete ssh key
+```
+cd ansible-container-lab ;ssh-keygen -f ubuntu/keycontainer
+```
 Run Docker composer from `ansible-container-lab` directory.
 ```
 docker-compose up -d
