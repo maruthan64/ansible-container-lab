@@ -1,4 +1,4 @@
-# Simple Ansible labolatory in Docker containers  
+# Simple Ansible lab in Docker containers  
 This action creates four Docker containers are created on which you can practice simple plays with Ansible.
 
 ### How to use
