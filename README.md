@@ -5,7 +5,6 @@ This action creates four Docker containers are created on which you can practice
 Clone this repo.
 ```
 git clone git@github.com:kmkamyk/ansible-container-lab.git
-
 ```
 Run Docker composer from `ansible-container-lab` directory.
 ```
