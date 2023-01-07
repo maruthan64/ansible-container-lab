@@ -31,7 +31,7 @@ If you to somting wrong, just rebuild the containers.
 ```
 docker-compose up --build --force-recreate -d
 ```
-Or if you decide to finish playing, clean up.
+Or if you decide to stop playing, clean up after yourself```
 ```
 docker-compose down
 ```
