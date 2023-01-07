@@ -25,7 +25,7 @@ Play ad-hoc action from `~/ansible` folder.
 cd ansible ; ansible nodes -i inventory.yml -m ping
 ```
 #### Have fun !
-If you to somting wrong, just rebuild the containers.
+If you do something wrong, just rebuild the containers.
 ```
 docker-compose up --build --force-recreate -d
 ```
