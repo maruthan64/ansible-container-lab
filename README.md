@@ -1,5 +1,5 @@
 # Simple Ansible labolatory in Docker containers  
-Four Docker containers are created on which you can practice simple actions with Ansible.
+This action creates four Docker containers are created on which you can practice simple plays with Ansible.
 
 ### How to use
 Run Docker composer
