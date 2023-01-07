@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+  AnsibleNodeCtl:
+    build: "./ubuntu"
+    image: ansible-lab:latest
+    container_name: "AnsibleNodeCtl"
+    hostname: "AnsibleNodeCtl"
+    ports:
+      - "2020:22"
+    restart: always
+    networks:
+      ansible:
+        ipv4_address: "10.18.0.10"
+
+  AnsibleNode1:
+    image: ansible-lab:latest
+    build: "./ubuntu"
+    container_name: "AnsibleNode1"
+    hostname: "AnsibleNode1"
+    ports:
+      - "2021:22"
+    restart: always
+    networks:
+      ansible:
+
+  AnsibleNode2:
+    image: ansible-lab:latest
+    build: "./ubuntu"
+    container_name: "AnsibleNode2"
+    hostname: "AnsibleNode2"
+    ports:
+      - "2022:22"
+    restart: always
+    networks:
+      ansible:
+
+  AnsibleNode3:
+    image: ansible-lab:latest
+    build: "./ubuntu"
+    container_name: "AnsibleNode3"
+    hostname: "AnsibleNode3"
+    ports:
+      - "2023:22"
+    restart: always
+    networks:
+      ansible:
+      
+networks:
+  ansible:
+    ipam:
+      config:
+        - subnet: 10.18.0.0/16
+          gateway: 10.18.0.1
