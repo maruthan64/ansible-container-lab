@@ -26,7 +26,7 @@ cd ansible ; ansible nodes -i inventory.yml -m ping
 ```
 #### Have fun !
 
-
+### Clean up
 If you to somting wrong, just rebuild the containers.
 ```
 docker-compose up --build --force-recreate -d
