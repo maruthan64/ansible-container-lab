@@ -1,5 +1,5 @@
 # Simple Ansible lab in Docker containers  
-This action creates four Docker containers are created on which you can practice simple plays with Ansible.
+This action creates four Docker containers on which you can practice simple plays with Ansible.
 
 ### How to use
 Clone this repo.
