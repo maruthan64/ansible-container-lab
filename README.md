@@ -12,8 +12,8 @@ Login to Ctl container
 ssh kimyk@10.18.0.10 -i ubuntu/keycontainer
 ```
 
-Play ad-hoc acction from ~/ansible folder
+Play ad-hoc action from `~/ansible` folder
 ```
-ansible nodes -i inventory.yml -m ping
+cd ansible ; ansible nodes -i inventory.yml -m ping
 ```
 ### 
