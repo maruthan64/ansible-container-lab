@@ -1,11 +1,11 @@
 version: "3.9"
 
 services:
-  AnsibleNodeCtl:
+  ansiblenodectl:
     build: "./ubuntu"
     image: ansible-lab:latest
-    container_name: "AnsibleNodeCtl"
-    hostname: "AnsibleNodeCtl"
+    container_name: "ansiblenodectl"
+    hostname: "ansiblenodectl"
     ports:
       - "2020:22"
     restart: always
@@ -13,39 +13,41 @@ services:
       ansible:
         ipv4_address: "10.18.0.10"
 
-  AnsibleNode1:
+  ansiblenode1:
     image: ansible-lab:latest
     build: "./ubuntu"
-    container_name: "AnsibleNode1"
-    hostname: "AnsibleNode1"
-    ports:
-      - "2021:22"
+    container_name: "ansiblenode1"
+    hostname: "ansiblenode1"
+#    ports:
+#      - "2021:22"
     restart: always
     networks:
       ansible:
+#        ipv4_address: "10.18.0.11"
 
-  AnsibleNode2:
+  ansiblenode2:
     image: ansible-lab:latest
     build: "./ubuntu"
-    container_name: "AnsibleNode2"
-    hostname: "AnsibleNode2"
-    ports:
-      - "2022:22"
+    container_name: "ansiblenode2"
+    hostname: "ansiblenode2"
+#    ports:
+#      - "2022:22"
     restart: always
     networks:
       ansible:
+#        ipv4_address: "10.18.0.13"
 
-  AnsibleNode3:
+  ansiblenode3:
     image: ansible-lab:latest
     build: "./ubuntu"
-    container_name: "AnsibleNode3"
-    hostname: "AnsibleNode3"
-    ports:
-      - "2023:22"
+    container_name: "ansiblenode3"
+    hostname: "ansiblenode3"
+#    ports:
+#      - "2023:22"
     restart: always
     networks:
       ansible:
-      
+#        ipv4_address: "10.18.0.13"      
 networks:
   ansible:
     ipam:
