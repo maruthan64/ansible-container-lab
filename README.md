@@ -18,7 +18,7 @@ sudo chmod +x /usr/local/bin/docker-compose
 Clone this repo.
 
 ``` 
-git clone git@github.com:kmkamyk/ansible-container-lab.git 
+git clone https://github.com/kmkamyk/ansible-container-lab.git
 ```
 
 Enter to repository and generete ssh key
