@@ -4,6 +4,11 @@ This action creates four Ubuntu Docker containers on which you can practice simp
 ``` Be sure to only use this lab in a POC environment on a secure local network. ```
 
 ## How to use
+Install Docker.
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh
+```
 Clone this repo.
 
 ``` 
