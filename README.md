@@ -3,7 +3,8 @@ This action creates four Ubuntu Docker containers on which you can practice simp
 
 ``` Be sure to only use this lab in a POC environment on a secure local network. ```
 
-## How to use
+## Prerequisites
+
 Install Docker nad Docker composer
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh
@@ -14,6 +15,8 @@ Install Docker Composer
 sudo curl -L https://github.com/docker/compose/releases/download/1.21.2/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
+
+## How to use
 
 Clone this repo.
 
