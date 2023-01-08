@@ -1,11 +1,15 @@
 # Simple Ansible lab in Docker containers.
-This action creates four Docker containers on which you can practice simple plays with Ansible.
+This action creates four Ubuntu Docker containers on which you can practice simple plays with Ansible.
+
+``` Be sure to only use this lab in a POC environment on a secure local network. ```
 
 ## How to use
 Clone this repo.
+
+``` 
+git clone git@github.com:kmkamyk/ansible-container-lab.git 
 ```
-git clone git@github.com:kmkamyk/ansible-container-lab.git
-```
+
 Enter to repository and generete ssh key
 ```
 cd ansible-container-lab ;ssh-keygen -f ubuntu/keycontainer
