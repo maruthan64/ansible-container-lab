@@ -38,7 +38,7 @@ Login to Ctl container.
 ssh kimyk@10.18.0.10 -i ubuntu/keycontainer
 ```
 
-Play ad-hoc action from `~/ansible` folder.
+[example] Play ad-hoc action from `~/ansible` folder.
 ```
 cd ansible ; ansible nodes -i inventory.yml -m ping
 ```
@@ -53,3 +53,15 @@ Or if you decide to stop playing, clean up after yourself
 ```
 docker-compose down
 ```
+## Topology
+
+```
+Control Node:
+hostname: AnsibleNodeCtl, IP: 10.18.0.10
+
+Nodes:
+hostname: AnsibleNode1, IP: 10.18.0.x
+hostname: AnsibleNode2, IP: 10.18.0.x
+hostname: AnsibleNode3, IP: 10.18.0.x
+```
+Modify it according to your needs, `docker-compose.yml` and `Dockerfile` are yours
