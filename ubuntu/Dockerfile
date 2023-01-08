@@ -29,8 +29,8 @@ RUN echo "${USERNAME} ALL=(ALL) NOPASSWD: ALL " >> /etc/sudoers
 # create ansible lab files
 RUN mkdir /home/$USERNAME/ansible
 COPY inventory_example.yml /home/$USERNAME/ansible/inventory.yml
-RUN chown $USERNAME /home/$USERNAME/ansible/inventory.yml && \
-chmod 600 /home/$USERNAME/ansible/inventory.yml
+RUN chown -R $USERNAME:$USERNAME /home/$USERNAME/ansible/ && \
+chmod -R 755 /home/$USERNAME/ansible/
 # Run ssh service
 RUN service ssh start
 
